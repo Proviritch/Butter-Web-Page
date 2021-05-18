@@ -74,3 +74,76 @@ html {
     color: black;
 }
 
+.section--order {
+    margin: 0 2em 0.7em 2em;
+}
+
+.section--order--title {
+    text-align: center;
+    font-size: 3rem;
+    margin: 0.8333em 0;
+}
+
+.section--order--preorder {
+    display: inline-block;
+    font-size: 1.8rem;
+    text-decoration: none;
+    background: #000;
+    color: var(--amarillo);
+    padding: 0.555em 1.333em;
+    border-radius: 0.7rem;
+    border: 1px solid var(--amarillo);
+    width: 100%;
+    margin-bottom: 0.2777em;
+    transition: 0.2s linear;
+    font-weight: 600;
+    text-align: center;
+}
+
+.section--order--preorder:hover {
+    background: var(--amarillo);
+    color: black;
+}
+
+.section--spotify {
+    vertical-align: middle;
+}
+
+.section--svg {
+    width: 1.8rem;
+    height: auto;
+}
+
+.section--path {
+    fill: var(--amarillo);
+    transition: 0.2s linear;
+}
+
+.section--order--preorder:hover .section--path {
+    fill: #000;
+}
+
+.section--order--advice {
+    text-align: center;
+}
+
+.section--button {
+    width: 25px;
+    height: 25px;
+    background: #000;
+    position: absolute;
+    z-index: 1;
+    transform: translateY(87vh) rotate(-45deg);
+    border-radius: 0.3rem;
+    clip-path: polygon(0% 0%, 10% 0%, 100% 90%, 100% 100%, 0 100%);
+    animation: sube-baja 1s infinite alternate;
+    margin-top: 0.5em;
+}
+
+@keyframes sube-baja {
+    to {
+        transform: translateY(92vh) rotate(-45deg);
+    }
+}
+
+
