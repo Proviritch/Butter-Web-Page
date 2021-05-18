@@ -146,4 +146,70 @@ html {
     }
 }
 
+/*Empieza sección 2*/
+
+.main--section {
+    background-color: var(--amarillo);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2em
+}
+
+.main--section--img {
+    width: 45px;
+    height: auto;
+    margin-top: 5em;
+}
+
+.main--section--hashtag {
+    font-size: 2.6rem;
+    margin: 1em 0;
+}
+
+.main--section--text {
+    font-size: 1.6rem;
+    text-align: center;
+    padding: 0 1em;
+}
+
+.main--section--form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 0 2em;
+}
+
+.main--section--form--input {
+    background-color: transparent;
+    /* outline: none; */
+    border: none;
+    border-bottom: 3px solid black;
+    padding: 0.5em 0.2em;
+    width: 100%;
+    margin-top: 0.5em;
+}
+
+.main--section--form--label {
+    font-size: 1.3rem;
+}
+
+.main--section--submit {
+    color: var(--amarillo);
+    background-color: #000;
+    border-radius: 1rem;
+    font-size: 2rem;
+    border: none;
+    width: 20rem;
+    height: 4.4rem;
+    align-self: center;
+    margin-top: 0.5em;
+    transition: 0.2s linear;
+}
+
+.main--section--submit:hover {
+    color: black;
+    background-color: transparent;
+}
+
 
