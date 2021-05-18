@@ -151,9 +151,10 @@ html {
 .main {
     display: flex;
     flex-direction: column;
-    height: 1000px;
+    height: 595px;
     overflow: hidden;
     overflow-y: scroll;
+    justify-content: space-between;
 }
 
 .main--section {
@@ -280,5 +281,23 @@ html {
     align-items: center;
 }
 
+/*Footer*/
+
+.main--footer {
+    color: var(--amarillo);
+    padding: 1.2rem;
+    font-size: 1rem;
+    background-color: #000;
+    position: sticky;
+    bottom: 0;
+}
+
+.main--footer--terms {
+    text-align: center;
+}
+
+.main--footer--link:visited {
+    color: var(--amarillo);
+}
 
 
