@@ -227,7 +227,57 @@ html {
 .main--section2 {
     display: flex;
     flex-wrap: wrap;
-    
+    /* height: 50%; */
+}
+
+.main--section2--casilla {
+    width: 33.33333%;
+    height: 13%;
+    position: relative;
+}
+
+.main--section2--casilla:nth-of-type(4n+1) {
+    background: var(--naranja);
+}
+
+.main--section2--casilla:nth-of-type(4n+2) {
+    background: var(--azul);
+}
+
+.main--section2--casilla:nth-of-type(4n+3) {
+    background: var(--verde);
+}
+
+.main--section2--casilla:nth-of-type(4n+4) {
+    background: var(--rosa);
+}
+
+.main--section2--butter {  
+    background-image: url('pan_mantequilla.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 80px;
+    /* width: 100%; */
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main--section2--logo {
+    width: 15px;
+}
+
+.main--section2--nombre {
+    text-align: center;
+    font-family: 'Permanent Marker', cursive;
+}
+
+.main--section2--name-region {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 
