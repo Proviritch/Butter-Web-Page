@@ -55,6 +55,7 @@ html {
     display: block;
     width: 70%;
     height: auto;
+    max-width: 374px;
 }
 
 .section--link, .section--link:visited {
@@ -76,6 +77,8 @@ html {
 
 .section--order {
     margin: 0 2em 0.7em 2em;
+    display: flex;
+    flex-direction: column;
 }
 
 .section--order--title {
@@ -94,6 +97,7 @@ html {
     border-radius: 0.7rem;
     border: 1px solid var(--amarillo);
     width: 100%;
+    /* max-width: 336px; */
     margin-bottom: 0.2777em;
     transition: 0.2s linear;
     font-weight: 600;
@@ -151,10 +155,9 @@ html {
 .main {
     display: flex;
     flex-direction: column;
-    height: 595px;
+    height: 100vh;
     overflow: hidden;
     overflow-y: scroll;
-    justify-content: space-between;
 }
 
 .main--section {
@@ -189,6 +192,7 @@ html {
     flex-direction: column;
     width: 100%;
     padding: 0 2em;
+    max-width: 600px;
 }
 
 .main--section--form--input {
@@ -228,12 +232,13 @@ html {
 .main--section2 {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(8, minmax(100px, 1fr));
+    grid-template-rows: repeat(8, minmax(33.333vw, 1fr));
 }
 
 .main--section2--casilla {
     width: 100%;
-    min-height: 100px;
+    /* min-height: 100px; */
+    height: 33.333vw;
     position: relative;
 }
 
@@ -259,8 +264,7 @@ html {
     background-repeat: no-repeat;
     background-position: center;
     min-height: 80px;
-    /* width: 100%; */
-    height: auto;
+    height: 80%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -278,7 +282,8 @@ html {
 .main--section2--name-region {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-end;
+    /* margin-top: 0.5em; */
 }
 
 /*Footer*/
