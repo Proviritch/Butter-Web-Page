@@ -1,0 +1,4 @@
+.section--img--order--advice {
+    display: flex;
+    flex-direction: row;
+}

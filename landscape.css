@@ -1,0 +1,7 @@
+.section {
+    height: 120vh;
+}
+
+.section--fondo:nth-of-type(2) {
+    transform: translateY(calc(120vh - 100%));
+}

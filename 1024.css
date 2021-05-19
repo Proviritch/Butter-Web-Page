@@ -1,0 +1,41 @@
+.main {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    overflow: hidden;
+    overflow-y: visible;
+}
+
+.main--section {
+    width: 45%;
+    height: 100vh;
+}
+
+.main--section2 {
+    width: 55%;
+    overflow: hidden;
+    overflow-y: scroll;
+    height: 100vh;
+} 
+
+.main--section2::-webkit-scrollbar {
+    width: 10px;
+    background: #000;
+}
+
+.main--section2::-webkit-scrollbar-thumb {
+    background: var(--amarillo);
+}
+
+/* .main--section2::-webkit-scrollbar-track {
+    background: #000;
+} */
+
+
+.main--section2 {
+    grid-template-rows: repeat(8, minmax(calc(33.333vw * 0.6), 1fr));
+}
+
+.main--section2--casilla {
+    height: calc(33.333vw * 0.6);
+}

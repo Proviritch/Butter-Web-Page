@@ -1,0 +1,25 @@
+.main--section2 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(6, minmax(calc(25vw * 0.6), 1fr));
+}
+
+.main--section2--casilla {
+    height: calc(25vw * 0.6);
+}
+
+.main--section2--casilla:nth-of-type(5n+1) {
+    background: var(--naranja);
+}
+
+.main--section2--casilla:nth-of-type(5n+2) {
+    background: var(--azul);
+}
+
+.main--section2--casilla:nth-of-type(5n+3) {
+    background: var(--verde);
+}
+
+.main--section2--casilla:nth-of-type(5n+4) {
+    background: var(--rosa);
+}
